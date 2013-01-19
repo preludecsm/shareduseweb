@@ -1,0 +1,61 @@
+<% provide(:title, 'Home') %> 
+
+<!-- hero-unit is a large callout and supporting pieces of content -->
+
+<div class="center hero-unit">
+	<h1>Welcome to Micktel</h1>
+	<h2>
+		Home Page for
+		<a href="http://www.micktel.com/">Micktel</a>
+		Toll-Free Shared-Use Services
+	</h2>
+	<%= link_to "Start your search now!", '#', class: "btn btn-large btn-primary" %>
+</div>
+
+<div class ="row-fluid">
+	<div class ="span4">
+		<h2>Toll-Free Numbers</h2>
+		<p>A great toll free number associated with your business can catapult your sales. Let our experts help you find the perfect toll free number for your business. Give us a call today!</p>
+	</div>
+	<div class ="span4">
+		<h2>Company Overview</h2>
+		<p>In advertising, knowing which ads are working is essential to managing an efficient campaign. We offer solutions to companies looking for more effective ways to reach consumers and increase sales to justify a return on the invested cost.</p>
+	</div>
+	<div class ="span4">
+		<h2>Toll-Free Examples</h2>
+		<ul>
+				<li><%= link_to "1-800-LOW-RATE", 
+					tfnumber_path( 
+						      :digits => "800-569-7283", 
+						      :spelling => "800-LOW-RATE" ) %></li>
+				<li><%= link_to "1-800-CHEAP-LOAN", 
+					tfnumber_path( 
+						      :digits => "800-243-2756", 
+						      :spelling => "800-CHEAP-LOAN" ) %></li>
+				<li><%= link_to "1-800-GOLFBALL", 
+					tfnumber_path( 
+						      :digits => "800-465-3225", 
+						      :spelling => "800-GOLFBALL" ) %></li>
+				<li><%= link_to "1-800-NEW-CLIENTS", 
+					tfnumber_path( 
+						      :digits => "800-639-2543", 
+						      :spelling => "800-NEW_CLIENTS" ) %></li>
+				<li><%= link_to "1-800-RETAILER", 
+					tfnumber_path( 
+						      :digits => "800-738-2453", 
+						      :spelling => "800-RETAILER" ) %></li>
+				<li><%= link_to "1-800-BOWLING", 
+					tfnumber_path( 
+						      :digits => "800-269-5464", 
+						      :spelling => "800-BOWLING" ) %></li>
+				<li><%= link_to "1-800-FREE-RIDE", 
+					tfnumber_path( 
+						      :digits => "800-373-3743", 
+						      :spelling => "800-FREE-RIDE" ) %></li>
+				<li><%= link_to "1-800-LOW-COST", 
+					tfnumber_path( 
+						      :digits => "800-569-2678", 
+						      :spelling => "800-LOW-COST" ) %></li>
+		</ul>
+	</div>
+</div>
